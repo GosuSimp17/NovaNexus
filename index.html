@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaNexus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="logo">Nova<span>Nexus</span></div>
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#destacados">Destacados</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="carrito">
+            <button id="verCarrito">🛒 Carrito (<span id="cantidadCarrito">0</span>)</button>
+        </div>
+    </header>
+
+    <!-- Barra de búsqueda -->
+    <section class="busqueda">
+        <input type="text" id="busquedaInput" placeholder="Buscar productos..." />
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to NovaNexus</h1>
+        <p>Encuentra productos de calidad al mejor precio</p>
+        <a href="#productos" class="cta">Ver Productos</a>
+    </section>
+
+    <!-- Productos destacados -->
+    <section id="destacados" class="destacados">
+        <h2>Productos Destacados</h2>
+        <div class="productos-grid" id="productosDestacados">
+            <!-- Productos destacados cargados dinámicamente -->
+        </div>
+    </section>
+
+    <!-- Todos los productos -->
+    <section id="productos" class="productos">
+        <h2>Catálogo de Productos</h2>
+        <div class="productos-grid" id="productosGrid">
+            <!-- Los productos se cargarán dinámicamente aquí -->
+        </div>
+    </section>
+
+    <!-- Modal del carrito -->
+    <div id="modalCarrito" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="listaCarrito"></div>
+            <p id="totalCarrito"></p>
+            <button id="vaciarCarrito">Vaciar Carrito</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <p>&copy; 2024 Tienda Virtual. Todos los derechos reservados.</p>
+        <p>Contacto: tienda@example.com</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
