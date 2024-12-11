@@ -1,0 +1,213 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212121;
+    color: #fff;
+    padding: 15px 20px;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff7043;
+}
+.logo span {
+    color: #fff;
+}
+.navbar a {
+    margin: 0 20px;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color: #ff7043;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("img/clima.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 20px;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.cta {
+    background-color: #ff7043;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+.cta:hover {
+    background-color: #ff5722;
+}
+
+
+/* === PRODUCTOS === */
+
+.productos {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+.productos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.producto-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.producto-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.producto-imagen {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.producto-nombre {
+    font-size: 1.2rem;
+    margin: 15px 10px;
+    color: #333;
+}
+.producto-precio {
+    font-size: 1.1rem;
+    color: #ff5722;
+    margin: 10px 15px 15px;
+    margin-bottom: 15px;
+}
+.btn-comprar {
+    background-color: #ff7043;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-comprar:hover {
+    background-color: #ff5722;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #212121;
+    color: #fff;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+}
+
+/* Estilos para barra de búsqueda */
+.busqueda {
+    margin: 20px auto;
+    text-align: center;
+}
+#busquedaInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.modal .close {
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+/* Estilos del carrito */
+.carrito {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.carrito button {
+    margin-left: 20px; /* Separar el botón del carrito de otros elementos */
+    background-color: #ff7043;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.carrito button:hover {
+    background-color: #ff5722;
+}
+
+/* Productos destacados */
+.destacados {
+    padding: 40px 20px; /* Aquí le añadí margen interno para separar los productos de los bordes */
+    margin: 0 30px; /* Esto es lo que se agregó para darle más margen desde los costados */
+}
+
+
